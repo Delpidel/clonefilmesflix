@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <title>CLONE</title>
+
+    <!--Secção CSS inline-->
+<style>
+
+body {
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo {
+    font-family: 'Kanit', sans-serif;
+    margin-left: 10px;
+    color: red;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.nav-bar {
+    align-items: flex-end;
+    margin: 28px;
+}
+
+.language {
+    padding: 8px;
+    margin-right: 30px;
+    border-radius: 4px;
+    border-color: gray;
+}
+
+.botao-submit {
+    padding: 8px 14px 8px;
+    background-color: red;
+    border-radius: 6px;
+}
+
+.apresentacao {
+    color: white;
+    font-size: 30px;
+}
+
+.sub-apresentacao {
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.pesquisar {
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+    border-bottom: 1px solid rgb(93, 113, 124);
+}
+
+.barra-pesquisa {
+    padding: 10px 2px 10px;
+    margin-right: -5px;
+    margin-bottom: 20px;
+    width: 280px;
+}
+
+.botao-pesquisa {
+    padding: 10px;
+    background-color: red;
+    border-radius: 4px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid rgb(93, 113, 124);
+    background: linear-gradient(90deg,
+            rgb(0, 0, 0),
+            rgba(22, 32, 37, 0.932));
+} 
+
+.texto-esquerda {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.assista, .salve-seus-titulos {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.imagem1 {
+    margin-top: 28px;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: white;
+    border-bottom: 3px solid rgb(93, 113, 124);
+    background: linear-gradient(90deg,
+            rgb(0, 0, 0),
+            rgba(22, 32, 37, 0.932));
+}
+
+.texto-direita {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.imagem2 {
+    margin-top: 8px;
+}
+
+.baixe-series {
+    font-size: 28px;
+}
+
+.tabela {
+    margin-bottom: 25px;
+}
+
+td {
+    font-weight: 200;
+    text-align: start;
+    background-color: rgb(49, 50, 51);
+    width: 200px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+</style>
+<!--Fim da secção CSS inline-->
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">FILMESFLIX</h1>
+        <nav class="nav-bar">
+            <select id="dropdown" name="lingua" class="language" required>
+                <option disabled selected value>Português</option>
+                <option value="English">English</option>
+                <option value="Espanol">Español</option>
+                <option value="Francais">Français</option>
+                <option value="Deutsche">Deutsche</option>
+            </select>
+            <button type="button" id="submit-button" class="botao-submit">Entrar
+
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="container1" id="container1">
+            <h1 class="apresentacao">Filmes, séries e muito mais.<br>Sem limites.</h1>
+            <h3 class="sub-apresentacao">Assista onde quiser e quando quiser.</h3>
+            <p class="pesquisar">Pronto para assistir? Pesquise seu filme favorito</p>
+            <nav class="nav-search">
+                <input type="text" class="barra-pesquisa">
+                <button type="submit" id="search-button" class="botao-pesquisa">Pesquisar</button>
+            </nav>
+        </section>
+        <section class="container2">
+            <div class="texto-esquerda">
+                <h1 class="segundo-h1">Aproveite em todo lugar!</h1>
+                <p class="assista">Assista na TV, XBox, Celular e em qualquer outro dispositivo.</p>
+            </div>
+            <div>
+                <img src="https://www.ofuxico.com.br/wp-content/uploads/2021/10/painel-com-posteres-filmes-halloween-paramount.jpg"
+                    alt="catálogo de filmes" width="150px" class="imagem1">
+            </div>
+        </section>
+
+        <section class="container3">
+            <div class="texto-direita">
+                <img src="https://uploads.metropoles.com/wp-content/uploads/2019/07/03142750/StrangerThings_S3_Eleven_RGB_Digital_ES-ES.jpg"
+                    alt="Personagem Eleven da série Stranger Things" width="180px" class="imagem2">
+            </div>
+            <div>
+                <h1 class="baixe-series">Baixe séries para assistir offline!</h1>
+                <p class="salve-seus-titulos">Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+            </div>
+        </section>
+        <section class="container3">
+            <div>
+                <h3>Vantagens</h3>
+                <table class="tabela">
+                    <tr>
+                        <td>Baixo custo</td>
+                    </tr>
+                    <tr>
+                        <td>Assistir em todo lugar</td>
+                    </tr>
+                    <tr>
+                        <td>Cancelamento facil</td>
+                    </tr>
+                    <td>Muito conteúdo</td>
+                    </tr>
+                </table>
+
+    </main>
+
+    <footer= class="footer">
+        <p>
+        <div>
+            <a href="">Perguntas frequentes</a><br>
+            <a href="">Relações com investidores</a><br>
+            <a href="">Formas de assistir</a><br>
+            <a href="">Informações corporativas</a><br>
+        </div>
+        </p>
+        <p>
+        <div>
+            <a href="">Central de ajuda</a><br>
+            <a href="">Carreiras</a><br>
+            <a href="">Termos de uso</a><br>
+            <a href="">Entre em contato</a><br>
+        </div>
+        </p>
+        <p>
+        <div>
+            <a href="">Conta</a><br>
+            <a href="">Privacidade</a><br>
+            <a href="">Pagamentos</a><br>
+        </div>
+        </p>
+        <div>
+            <a href="">Media center</a><br>
+            <a href="">Preferências</a><br>
+            <a href="">Avisos legais</a><br>
+        </div>
+        </p>
+        </footer>
+
+</body>
+
+</html>
